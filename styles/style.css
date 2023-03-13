@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+	animation: animatecolor 2s linear infinite;
+}
+
+.container{
+	background: black;
+	position: absolute;
+	width:100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	
+}
+
+
+.container .music{
+	position: relative;
+	width:max(180px, 30vw);
+	height: max(100px, 30vh);
+	justify-content: space-between;
+	display: inline-flex;
+	align-items: center;
+
+}
+@keyframes animatecolor{
+
+	0%{
+		filter: hue-rotate(0deg);
+
+	}
+
+	100%{
+		filter: hue-rotate(360deg);
+
+	}
+}
+
+.container .music .bar{
+	width: clamp(8px, 5vw,15px);
+	border-radius: 10px;
+	background: white;
+	margin: 0px 7px;
+	animation: animate 1.5s ease-in-out infinite;
+
+}
+
+@keyframes animate{
+	0%,100%{
+		height: 1.5px;
+	}
+	50%{
+		height: clamp(80px,10vw,250px);
+	}
+}
+
+.container .music .bar:nth-child(1){
+	background: #232ba5;
+	animation-delay: 1s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
+.container .music .bar:nth-child(2){
+	background: #124afe;
+	animation-delay: .8s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
+.container .music .bar:nth-child(3){
+	background: #00a1c0;
+	animation-delay: .6s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
+.container .music .bar:nth-child(4){
+	background: #35e769;
+	animation-delay: .4s;
+	box-shadow:0px 0px 8px #00a1c0,
+				0px 0px 10px  #00a1c0;
+}
+.container .music .bar:nth-child(5){
+	background: #61e189;
+	animation-delay: .2s;
+		box-shadow:0px 0px 8px #35e769,
+				0px 0px 10px  #35e769;
+}
+
+.container .music .bar:nth-child(6){
+	background:  #35e769;
+	animation-delay: 2s;
+	box-shadow:	0px 0px 8px  #00a1c0,
+				0px 0px 10px #00a1c0;
+}
+
+.container .music .bar:nth-child(7){
+	background:  #00a1c0;
+	animation-delay: .4s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
+.container .music .bar:nth-child(8){
+	background:#124afe;
+	animation-delay: .6s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
+.container .music .bar:nth-child(9){
+	background: #124afe;
+	animation-delay: .8s;
+	box-shadow:0px 0px 8px #3660da,
+				0px 0px 10px  #3660da;
+}
+
